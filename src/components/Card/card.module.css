@@ -1,0 +1,59 @@
+.cardContainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image:url("../../assets/pxfuel.jpg") ;
+background-position:center;
+width: 20%;
+border: 1px solid black;
+border-radius: 5px;
+padding: 20px;
+cursor: pointer;
+-moz-osx-font-smoothing: grayscale;
+backface-visibility: hidden;
+transform: translateZ(0);
+transition: transform 0.5s ease-out;
+}
+
+.cardContainer:hover {
+    transform: scale(1.05);
+}
+
+.atributes{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 95%;
+font-size: small;
+font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,sans-serif;
+}
+
+.closeButton{
+    opacity: 1.0;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.closeButton:hover{
+background-color: red;
+color: white;
+}
+
+.imageContainer{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.name{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50% -30%);
+    
+}
